@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticha's Css Original Work</title>
+    </head>
+    <style>
+        p.a {
+          font: italic 10px Times, sans-serif;
+        }
+        
+        p.b {
+          font: bold 15px Georgia, serif;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        ul  {
+            list-style: square;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            margin-left: -1000px
+        }
+
+        .centered {
+            color: white;
+            font: bold 25px Georgia;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .photo {
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        #border1 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(https://i.stack.imgur.com/OJCiN.png) 28 round;
+        }
+
+    </style>
+    <body>
+        <h1>CSS Original Work</h1>
+        <h2>Level 1: Newbie</h2>
+
+        <h3>1. Two paragraphs with different font</h3>
+        <p class="a">This is the first paragraph. The paragraph will have the font be in Times, italics, and set to 10 pixels</p>
+
+        <p class="b">This is the second paragraph. The paragraph will have the font be in Georgia, bold, and set to 15 pixels.</p>
+
+        <h3>2. two pictures resized to 50 by 50 pixels</h3>
+        <img src="https://s.yimg.com/uu/api/res/1.2/4g.5OWebZj2wT96LzHkhJA--~B/aD04OTk7dz0xNjAwO2FwcGlkPXl0YWNoeW9u/https://o.aolcdn.com/hss/storage/midas/568e159263a2313f2d59d710bc382393/205561871/studio-ghibli-hayao-miyazaki-new-film-2017-12-08-03.jpg" style="width: 50px; height: 50px;">
+        <img src="https://cdn.domestika.org/c_fill,dpr_1.0,f_auto,h_1200,pg_1,t_base_params,w_1200/v1367342520/project-covers/000/076/011/76011-original-104139-original-laputa_1600.jpg?1367342520" style="width: 50px; height: 50px;">
+
+        <h3>3. Unique CSS command: List styling</h3>
+        <p>Favorite Drinks:</p>
+        <ul>
+            <li>Juice</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+
+        <h2>Level 2: Apprentice</h2>
+
+        <h3>1. Text centered on photo</h3>
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/10/63/88/106388a52a51920d5a0e6b808ca1a7f1.jpg" style="width: 400px; height: 250px">
+            <div class="centered">Centered</div>
+        </div>
+
+        <h3>2. Photo with 20 pixel margin</h3>
+        <div class="photo">
+            <img src="https://pen-online.com/fr/wp-content/uploads/2021/09/24111321/%C2%A9-Studio-Ghibli-4-1024x554.jpg" style="width: 400px; height: 250px">
+        </div>
+
+        <h3>3. Text with dotted line border</h3>
+        <p id="border1">Text with dotted line border</p>
+    </body>
+</html>
+
+
